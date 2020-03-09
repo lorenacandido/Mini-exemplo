@@ -53,6 +53,7 @@ postoC=qr(C)$rank;postoC
 
 
 plot(dad)
+plot(dad[,c(3,4)])
 ##item a. Estudo longitudinal
 
 

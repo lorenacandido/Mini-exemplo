@@ -1,5 +1,5 @@
 
-###CC0293-Análise Multivariada- Prof. Mauricio#
+###CC0293-An?lise Multivariada- Prof. Mauricio#
 
 
 ##X1=comprimento do osso aos 8 anos de idade
@@ -39,7 +39,7 @@ X_17,X_18,X_19,X_20)
 dad
 colnames(dad)=c("t1","t2","t3","t4");dad
 
-p=ncol(dad)###número de variáveis
+p=ncol(dad)###n?mero de vari?veis
 p
 n=nrow(dad)### tamanho da amostra
 n
@@ -52,7 +52,7 @@ postoC=qr(C)$rank;postoC
 
 
 
-
+plot(dad)
 ##item a. Estudo longitudinal
 
 
@@ -118,7 +118,7 @@ RW=sqrt(solve(diag(diag(SW))))%*%SW%*%sqrt(solve(diag(diag(SW))));RW
 
 
 
-###Criação da função transforma
+###Cria??o da fun??o transforma
 
 
 Trans=function(dad,C,d){
@@ -255,7 +255,7 @@ cov(dad_Y);S_Y
 
 
 n=nrow(dad_Y);n
-p=ncol(dad_Y);p ###### (  só temos 3 variáveis agora)
+p=ncol(dad_Y);p ###### (  s? temos 3 vari?veis agora)
 
 
 T2_cal=n*t(Yb)%*%solve(S_Y)%*%(Yb);T2_cal
